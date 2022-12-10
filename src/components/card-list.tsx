@@ -32,8 +32,8 @@ export interface CharacterType {
 const CardList = () => {
     const [searchParams] = useSearchParams();
     const searchNameFromURL = searchParams.get("search");
-    const { character, isError: characterError } = useSearchCharacter(searchNameFromURL);
-    const { characters, isError: charactersError } = useFetch10Characters();
+    const { character } = useSearchCharacter(searchNameFromURL);
+    const { characters } = useFetch10Characters();
 
 
     const CardSearchList = character === undefined ? null :
