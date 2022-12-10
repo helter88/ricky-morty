@@ -6,7 +6,7 @@ interface InputType {
 }
 
 const Input: React.FC<InputType> = ({ inputText, onChangeHandler }) => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [, setSearchParams] = useSearchParams();
 
     const onHandleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === "Enter" && inputText.length > 0) {
