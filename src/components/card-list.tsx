@@ -2,7 +2,6 @@ import useFetch10Characters from "../hooks/use-fetch-10-characters";
 import Card from "./card";
 import { useSearchParams } from "react-router-dom";
 import useSearchCharacter from "../hooks/use-search-character";
-import { useEffect } from "react";
 
 
 export interface CharacterType {

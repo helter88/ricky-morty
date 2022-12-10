@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Input from "./input";
-import { useSearchParams } from "react-router-dom";
 
 const SearchBar = () => {
     const [inputText, setInputText] = useState("");
